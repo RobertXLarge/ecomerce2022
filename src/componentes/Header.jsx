@@ -1,11 +1,22 @@
 import AppBar from '@material-ui/core/AppBar/AppBar';
+import Toolbar from '@material-ui/core/Toolbar/Toolbar';
 import React, { useState } from 'react';
 
 const Header = () => {
   const [mobile, setMobile] = useState(false)
+
+  const displayMobile = () =>  {}
+  const displayDesktop = () =>  {
+    <Toolbar>
+      
+      </Toolbar>
+  }
+  
   return (
     <AppBar>
-      <h1>Encabezado</h1>
+      {
+        mobile ? displayMobile() : displayDesktop()
+      }
     </AppBar>
   );
 };
