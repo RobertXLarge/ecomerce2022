@@ -13,8 +13,14 @@ const Header = () => {
   const displayDesktop = () =>  {
     return(<Toolbar className={ classes.toolbar}>
       <img src={logo} className={classes.logo}/>
-      <InputBase fullWidth placeholder="Busque aqui..."/>
-      <SearchIcon/>
+      <div className= {classes.center}>
+        <InputBase fullWidth placeholder="Busque aqui..." inputProps= {{className: classes.input}}/>
+        <SearchIcon/>
+        </div>
+
+        <div className={classes.right}>
+          
+          </div>
       </Toolbar>)
   }
   
@@ -39,6 +45,20 @@ const useStyle = makeStyles ((theme)=>({
     height: "30px",
     margin: theme.spacing(1,0,0,2),
     objectFit: "contain",
+  },
+
+  input: {
+    padding: theme.spacing(1,5,1,5),
+  },
+
+  center: {
+    display: "flex",
+    allignItems: "center",
+    border: "1px solid lightgray",
+    borderRadius: "999px",
+    minWidth: "300px",
+    padding: theme.spacing(1),
+    margin: theme.spacing(1),
   }
 
 }))
