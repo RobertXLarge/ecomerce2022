@@ -1,10 +1,12 @@
-import React from 'react';
+import AppBar from '@material-ui/core/AppBar/AppBar';
+import React, { useState } from 'react';
 
 const Header = () => {
+  const [mobile, setMobile] = useState(false)
   return (
-    <div>
+    <AppBar>
       <h1>Encabezado</h1>
-    </div>
+    </AppBar>
   );
 };
 
