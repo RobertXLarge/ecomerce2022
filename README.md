@@ -8,3 +8,4 @@
 - App.jsx : Componentes Header, Home, Searchpage
 - Enrutar Home y Searchpage con react-router-dom
 - Header : displayDesktop(), displayMobile()
+- Header : displayDesktop()
