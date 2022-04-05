@@ -3,8 +3,8 @@ import InputBase from '@material-ui/core/InputBase/InputBase';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import Toolbar from '@material-ui/core/Toolbar/Toolbar';
 import React, { useState } from 'react';
-import logo from "../imagenes/hotellogo.png"
-import SearchIcon from "@material-ui/icons/Search"
+import logo from "../imagenes/hotellogo.png";
+import SearchIcon from "@material-ui/icons/Search";
 import Typography from '@material-ui/core/Typography/Typography';
 
 const Header = () => {
