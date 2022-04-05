@@ -1,10 +1,27 @@
 import { useState } from 'react';
 import Header from './componentes/Header';
+import Home from './componentes/Home';
+import Searchpage from './componentes/Searchpage';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Header/>
+      <Router>
+        <Header/>
+        
+        <Switch>
+         
+          <Route path = '/search'>
+          <Searchpage/>
+          </Route>
+
+          <Route path = '/'>
+          <Home/>
+          </Route>
+          
+          </Switch>
+      </Router>
     </div>
   );
 }
