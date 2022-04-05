@@ -1,8 +1,10 @@
 import AppBar from '@material-ui/core/AppBar/AppBar';
+import InputBase from '@material-ui/core/InputBase/InputBase';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import Toolbar from '@material-ui/core/Toolbar/Toolbar';
 import React, { useState } from 'react';
 import logo from "../imagenes/hotellogo.png"
+import SearchIcon from "@material-ui/icons/Search"
 
 const Header = () => {
   const [mobile, setMobile] = useState(false)
@@ -11,6 +13,8 @@ const Header = () => {
   const displayDesktop = () =>  {
     return(<Toolbar className={ classes.toolbar}>
       <img src={logo} className={classes.logo}/>
+      <InputBase fullWidth placeholder="Busque aqui..."/>
+      <SearchIcon/>
       </Toolbar>)
   }
   
