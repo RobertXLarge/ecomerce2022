@@ -9,9 +9,9 @@ const Header = () => {
   const classes = useStyle()
   const displayMobile = () =>  {}
   const displayDesktop = () =>  {
-    <Toolbar className={ classes.toolbar}>
+    return(<Toolbar className={ classes.toolbar}>
       <img src={logo}/>
-      </Toolbar>
+      </Toolbar>)
   }
   
   return (
