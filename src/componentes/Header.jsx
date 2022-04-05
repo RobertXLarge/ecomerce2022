@@ -2,6 +2,7 @@ import AppBar from '@material-ui/core/AppBar/AppBar';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import Toolbar from '@material-ui/core/Toolbar/Toolbar';
 import React, { useState } from 'react';
+import logo from "../imagenes/hotellogo.png"
 
 const Header = () => {
   const [mobile, setMobile] = useState(false)
@@ -9,7 +10,7 @@ const Header = () => {
   const displayMobile = () =>  {}
   const displayDesktop = () =>  {
     <Toolbar className={ classes.toolbar}>
-      <img src={}/>
+      <img src={logo}/>
       </Toolbar>
   }
   
