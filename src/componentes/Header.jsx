@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar/Toolbar';
 import React, { useState } from 'react';
 import logo from "../imagenes/hotellogo.png"
 import SearchIcon from "@material-ui/icons/Search"
+import Typography from '@material-ui/core/Typography/Typography';
 
 const Header = () => {
   const [mobile, setMobile] = useState(false)
@@ -19,7 +20,7 @@ const Header = () => {
         </div>
 
         <div className={classes.right}>
-          
+          <Typography> Sign in </Typography>
           </div>
       </Toolbar>)
   }
